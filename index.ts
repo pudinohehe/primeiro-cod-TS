@@ -22,6 +22,33 @@ const meuCatalogo: Filme[] = [
 
 ];
 
+
+
+function marcarComoVisto(tituloAlvo: string) {
+    const filmeEncontrado = meuCatalogo.find(filme => filme.titulo === tituloAlvo)
+    
+    if (filmeEncontrado) {
+        filmeEncontrado.visto = true;
+        filmeEncontrado.nota = 8.3
+        console.log(`Filme agora marcado como visto!`);
+    }
+    else {
+        console.log(`filme não está na lista`);
+    }
+
+}
+
+
+console.log(`testando lista antes da atualização!`);
+console.log(meuCatalogo);
+
+
+marcarComoVisto("os suspeitos");
+
+
+console.log(`testando lista após atualização`);
+console.log(meuCatalogo);
+
 const paraVer = meuCatalogo.filter((filme) => {
 
     return filme.visto === false;

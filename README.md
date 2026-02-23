@@ -1,7 +1,7 @@
 
 Sobre o codigo:
 
-Um codigo simples sobre um catalogo de filmes que estou assisti e vou assistir no futuro.
+Um codigo simples sobre um catalogo de filmes que assisti e vou assistir no futuro.
 
 
 

@@ -1,23 +1,18 @@
+# CineLogic TS
 
-Sobre o codigo:
+## About the Project
+A lightweight movie catalog system designed to track films I've watched and those on my future watchlist.
 
-Um codigo simples sobre um catalogo de filmes que assisti e vou assistir no futuro.
+## Goal
+To deepen my **TypeScript** expertise by building a robust tool for tracking watched movies, ratings, and metadata.
 
+## Technologies
+* **TypeScript** (Static Typing and Interfaces)
+* **Node.js** (Runtime Environment)
+* **Git/GitHub** (Professional Version Control)
 
-
-Objetivo: Aprofundar meus conhecimentos em **TypeScript**, enquanto faço uma ferramenta robusta para rastrear filmes assistidos, notas e metadados.
-
-
-
-Tecnologias utilizadas:
-* **TypeScript** (Tipagem estática e Interfaces)
-* **Node.js** (Runtime)
-* **Git/GitHub** (Versionamento profissional)
-
-
-
-Aprendizados
-Neste projeto, apliquei conceitos de:
-1. **Manipulação de Arrays**: Uso de `.filter()` e `.find()`.
-2. **Referência de Memória**: Como alterar objetos dentro de listas sem perder a integridade.
-3. **Tratamento de Erros**: Verificações lógicas para evitar que o sistema quebre ao buscar itens inexistentes.
+## Key Learnings
+In this project, I applied the following concepts:
+1. **Array Manipulation**: Advanced use of `.filter()` and `.find()` methods.
+2. **Memory Reference**: Modifying objects within lists while maintaining data integrity.
+3. **Error Handling**: Implementing logical checks to prevent system crashes when searching for non-existent items.

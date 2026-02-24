@@ -1,67 +1,67 @@
-interface Filme {
+interface Movie {
 
-    titulo: string;
+    title: string;
 
-    visto: boolean;
+    watched: boolean;
 
-    nota?: number;
+    rating?: number;
 
 }
 
-const meuCatalogo: Filme[] = [
+const myCatalog: Movie[] = [
 
-  { titulo: "o show de truman", visto: true, nota: 8},
+  { title: "Truman's show", watched: true, rating: 8},
 
-  {titulo: "legally blond", visto: true, nota: 4.5},
+  {title: "legally blond", watched: true, rating: 4.5},
 
-  {titulo: "a morte te da parabens", visto: false},
+  {title: "a morte te da parabens", watched: false},
 
-  {titulo: "nada de novo no front", visto: false},
+  {title: "nada de novo no front", watched: false},
 
-  {titulo: "os suspeitos", visto: false}
+  {title: "The usual suspects", watched: false}
 
 ];
 
 
 
-function marcarComoVisto(tituloAlvo: string) {
-    const filmeEncontrado = meuCatalogo.find(filme => filme.titulo === tituloAlvo)
+function markAsWatched(movieTitle: string) {
+    const rightMovie = myCatalog.find(movie => movie.title === movieTitle)
     
-    if (filmeEncontrado) {
-        filmeEncontrado.visto = true;
-        filmeEncontrado.nota = 8.3
-        console.log(`Filme agora marcado como visto!`);
+    if (rightMovie) {
+        rightMovie.watched = true;
+        rightMovie.rating = 8.3
+        console.log(`Movie now is maked as seen`)
     }
     else {
-        console.log(`filme não está na lista`);
+        console.log(`Movie is not on the list`)
     }
 
 }
 
 
-console.log(`testando lista antes da atualização!`);
-console.log(meuCatalogo);
+console.log(`Testing before update`)
+console.log(myCatalog);
 
 
-marcarComoVisto("os suspeitos");
+markAsWatched("os suspeitos");
 
 
-console.log(`testando lista após atualização`);
-console.log(meuCatalogo);
+console.log(`Testing after update`)
+console.log(myCatalog);
 
-const paraVer = meuCatalogo.filter((filme) => {
+const toSee = myCatalog.filter((movie) => {
 
-    return filme.visto === false;
+    return movie.watched === false;
 }
 
 )
 
 
-console.log(`voce ainda tem ${paraVer.length} filmes para ver.`)
+console.log(`You still have ${toSee.length} movies to watch.`)
 
-paraVer.forEach((filme) => {
+toSee.forEach((movie) => {
 
-     console.log(`voce pode assistir ${filme.titulo} `)
+     console.log(`You may watch ${movie.title} `)
 
 
 

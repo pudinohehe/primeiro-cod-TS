@@ -2,16 +2,7 @@ import readline from "readline-sync";
 import { Movie } from "./types";
 import fs from "fs";
 import { saveonJson, addNewMovie, markAsWatched } from "./functions";
-
-export let myCatalog: Movie[] = [];
-
-try{
-const rawdata = fs.readFileSync("./data/database.json", "utf-8");
-myCatalog = JSON.parse(rawdata);
-} catch{
-  myCatalog = [];
-  console.log("No database found. Starting a new one!")
-}
+import { myCatalog } from "./database";
 
 
 let exit = false;

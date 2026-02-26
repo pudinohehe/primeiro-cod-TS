@@ -1,6 +1,6 @@
 import readline from "readline-sync";
 import { Movie } from "./types";
-import { myCatalog } from ".";
+import { myCatalog } from "./database";
 import fs from "fs";
 
 export function addNewMovie() {

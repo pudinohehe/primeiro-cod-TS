@@ -1,9 +1,16 @@
+import dotenv from "dotenv";
+import path from "path";
 import readline from "readline-sync";
 import { Movie } from "./types";
 import fs from "fs";
 import { saveonJson, addNewMovie, markAsWatched } from "./functions";
 import { myCatalog } from "./database";
 
+
+dotenv.config({ path: path.resolve(__dirname, "../../.env") });
+readline.keyInPause();
+
+console.log("Minha chave é: ", process.env.TMDB_API_KEY);
 
 let exit = false;
 

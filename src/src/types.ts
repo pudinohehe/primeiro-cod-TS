@@ -4,3 +4,13 @@ export interface Movie {
     rating?: number;
 
 }
+
+
+export interface TMDBMovie {
+    title: string;
+    vote_average: number;
+    runtime: number;
+    overview: string;
+    genres: { name: string} [];
+}
+

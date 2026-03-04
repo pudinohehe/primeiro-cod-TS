@@ -1,0 +1,64 @@
+body {
+
+    background-color: #151328;
+    color: white;
+}
+
+
+
+/* Para centralizar o container da busca */
+.search-container {
+    display: flex;
+    justify-content: center;  /* Centraliza na horizontal */
+    margin-top: 300px;  /* Joga ela mais para baixo do topo */
+
+
+
+}
+
+/* Para deixar a barra grande e bonita */
+#movie-search {
+    width: 60%; /* Ocupa 60% da largura da tela */
+    padding: 15px 25px; /* Espaço interno para não ficar apertado */
+    font-size: 1.2rem; /* Letra maior */
+    border-radius: 30px; /* Bordas arredondadas estilo moderno */
+    border: 2px solid #333;
+    background: transparent;
+    color: white;
+
+    }
+
+    h1 {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 0;
+        font-size: 3rem; /* Aumenta o tamanho do titulo */
+        white-space: nowrap;
+    }
+
+    header {
+         display: flex;
+         justify-content: flex-end;
+         align-items: center;
+         padding: 20px 50px;
+         position: relative;
+         height: 80px;
+         margin-top: 0;
+    }
+
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ccc;
+}
+
+main {
+    display: none;
+}

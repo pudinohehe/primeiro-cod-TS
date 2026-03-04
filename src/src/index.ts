@@ -50,7 +50,12 @@ while (!exit) {
     case 5:
         try {
           const answer = await api.get<TMDBMovie>(`/movie/1124`);
-            console.log(`Info of API: ${answer.data.title}`);
+             console.log("-------------------------------");
+             console.log(` Título: ${answer.data.title}`);
+             console.log(` Nota: ${answer.data.vote_average}`);
+             console.log(` Lançamento: ${answer.data.release_date}`);
+             console.log(` Sinopse: ${answer.data.overview}`);
+            console.log("-------------------------------");
             readline.keyInPause()
         }
         catch (error) {
@@ -67,4 +72,5 @@ while (!exit) {
 }
 
 }
+
 main();

@@ -11,6 +11,7 @@ export interface TMDBMovie {
     vote_average: number;
     runtime: number;
     overview: string;
+    release_date: number;
     genres: { name: string} [];
 }
 

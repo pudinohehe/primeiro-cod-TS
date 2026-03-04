@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "target": "ES6",                          /* Versão do JS que o navegador entende */
+    "module": "CommonJS",                     /* Sistema de módulos padrão */
+    "rootDir": "./",                          /* Onde estão seus arquivos .ts */
+    "outDir": "./dist",                       /* Onde o .js convertido vai morar */
+    "esModuleInterop": true,                  /* Ajuda com imports de bibliotecas JS */
+    "forceConsistentCasingInFileNames": true, /* Evita erro de maiúsculas/minúsculas */
+    "strict": true,                           /* Ativa o modo 'fúria total' contra erros */
+    "skipLibCheck": true                      /* Pula erros de dentro das bibliotecas */
+  }
+}

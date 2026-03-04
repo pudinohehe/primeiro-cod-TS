@@ -18,15 +18,24 @@ body {
 
 /* Para deixar a barra grande e bonita */
 #movie-search {
-    width: 60%; /* Ocupa 60% da largura da tela */
-    padding: 15px 25px; /* Espaço interno para não ficar apertado */
-    font-size: 1.2rem; /* Letra maior */
-    border-radius: 30px; /* Bordas arredondadas estilo moderno */
+    /* 1. Definimos a largura relativa e o novo 'teto' */
+    width: 90%; 
+    max-width: 1000px; /* Aqui aumentamos o limite para ela esticar mais */
+
+    /* 2. A mágica da centralização */
+    display: block;    /* Faz a barra se comportar como um bloco sólido */
+    margin: 40px auto; /* 40px de espaço em cima/baixo e AUTO nas laterais centraliza o bloco */
+
+    /* 3. Estética (mantenha o que você já fez de bonito) */
+    padding: 15px 25px;
+    font-size: 1.2rem;
+    border-radius: 30px;
     border: 2px solid #333;
     background: transparent;
     color: white;
-
-    }
+    outline: none;     /* Remove aquela borda azul padrão ao clicar */
+}
+    
 
     h1 {
         position: absolute;
@@ -61,4 +70,9 @@ nav a:hover {
 
 main {
     display: none;
+}
+
+form {
+    width: 100%;
+    display: block;
 }

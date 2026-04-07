@@ -1,5 +1,14 @@
+// Fora do evento
 const searchInput = document.getElementById('movie-search') as HTMLInputElement;
+const resultContainer = document.getElementById('result-container') as HTMLDivElement;
 
-searchInput.addEventListener('input', (event) => {
-    console.log("You're typing", searchInput.value)
+// O evento que "escuta" a digitação
+searchInput.addEventListener('input', () => {
+    // TUDO que acontece quando digita tem que estar aqui dentro!
+    resultContainer.innerHTML = `
+        <div class="movie-card">
+            <h3>${searchInput.value}</h3>
+            <p>🎬 Categoria: Cinema</p>
+        </div>
+    `;
 });

@@ -76,3 +76,23 @@ form {
     width: 100%;
     display: block;
 }
+
+#result-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    color: #ffffff;
+    border: 2px solid red;
+    margin-top: 50px;
+    text-align: center;
+    min-height: 200px;
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+}
+
+.movie-card{
+    background-color: #2a2a2a;
+    padding: 10px;
+
+}
